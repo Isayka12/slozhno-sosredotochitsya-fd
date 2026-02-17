@@ -1,4 +1,11 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --background: url(/images/cover-image-dark.png);
+  --background-color: #000028;
+  --text-background: #ff0070;
+  --title-color: #db00ff;
+  --color-text-primary: #f1b2ce;
+  --color-text-secod: #000028;
+  --decor-zone: #ff0070;
+  --title-small-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-large-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
