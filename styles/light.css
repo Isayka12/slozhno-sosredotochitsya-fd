@@ -11,6 +11,7 @@
     display: none;
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --background: url(../images/cover-image-light.png);
@@ -21,8 +22,8 @@
     --color-text-second: #353430;
     --decor-zone: #353430;
     --color-hover: rgba(50 49 45 / 0.4);
-    .header__decorative-label {
-      display: none;
-    }
+  }
+  .header__decorative-label {
+    display: none;
   }
 }
