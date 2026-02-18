@@ -1,24 +1,26 @@
 :root.theme-light {
-  --background: url(/images/cover-image-light.png);
+  --background: url(../images/cover-image-light.png);
   --background-color: #fff1f7;
   --text-background: #ff8dcb;
   --title-color: #ffc2e6;
   --color-text-primary: #353430;
-  --color-text-secod: #353430;
+  --color-text-second: #353430;
   --decor-zone: #353430;
+  --color-hover: rgba(50 49 45 / 0.4);
   .header__decorative-label {
     display: none;
   }
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background: url(/images/cover-image-light.png);
+    --background: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
     --text-background: #ff8dcb;
     --title-color: #ffc2e6;
     --color-text-primary: #353430;
-    --color-text-secod: #353430;
+    --color-text-second: #353430;
     --decor-zone: #353430;
+    --color-hover: rgba(50 49 45 / 0.4);
     .header__decorative-label {
       display: none;
     }

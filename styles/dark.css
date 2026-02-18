@@ -1,8 +1,14 @@
 :root.theme-dark {
-  --background: url(/images/cover-image-dark.png);
+  --background: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --text-background: #ff0070;
   --title-color: #db00ff;
   --color-text-primary: #f1b2ce;
+  --color-text-second: #000028;
   --decor-zone: #ff0070;
+  --color-hover: rgba(255, 0, 112, 0.4);
+}
+
+.theme-dark .header__decorative-label {
+  display: block;
 }

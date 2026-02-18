@@ -1,6 +1,6 @@
 .page {
   padding-inline: 10px;
-  font-family: "IBM Plex mono";
+  font-family: "IBM Plex mono", monospace;
   background-color: var(--background-color);
   background-image: var(--background);
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 .header__theme-menu-button {
   border: none;
   padding-inline: 13px;
-  color: var(--text-background);
+  color: var(--decor-zone);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
@@ -88,7 +88,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 122, 40%);
+  border: 1px solid var(--color-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -96,11 +96,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--text-background);
+  border-block-end: 1px solid var(--decor-zone);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--text-background);
+  border: 1px solid var(--decor-zone);
   pointer-events: none;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .header__text {
-  color: var(--color-text-secod);
+  color: var(--color-text-second);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3;
@@ -160,11 +160,15 @@
 }
 
 .block-content__heading {
-  color: var(--color-text-secod);
+  color: var(--color-text-second);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3;
   background-color: var(--text-background);
+}
+
+.block-content__heading-regular-weight {
+  font-weight: 400;
 }
 
 .block-content__text {
@@ -172,14 +176,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
-}
-
-.block-content__subheading {
-  color: var(--color-text-secod);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 130%;
-  background-color: var(--text-background);
 }
 
 .block-content__link {
@@ -236,10 +232,23 @@
 
   .header {
     padding-block: 192px 243px;
+    min-block-size: 1024px;
   }
 
   .header__theme-menu {
     margin-block-end: 173px;
+  }
+
+  .decorated-zone::before {
+    bottom: 20px;
+  }
+
+  .header__decorative-label {
+    top: 20px;
+  }
+
+  .decorated-zone::after {
+    top: 20px;
   }
 
   .header__title {
@@ -306,6 +315,7 @@
 @media (width >= 1024px) {
   .header {
     padding-block: 20px 134px;
+    min-block-size: 768px;
   }
 
   .main {
